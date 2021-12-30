@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<title>Project I</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Logo_Hust.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div style="position:absolute, z-index:2"  classs="container p-5  " >
+	<div class="row no-gutters">
+        <div class="col-3 ">
+             <img  src="data:image/png;base64,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" alt="your image" />
+        </div>
+        <div class="col-6" style="    text-align: center;
+    font-size: 30px;
+    padding: 4%;
+    letter-spacing: 3px;
+    font-weight: 700;">
+            Project I - Nhận diện CMT/CCCD
+        </div>
+		<div class="col-3">
+			<div id="alert-info"  class="alert alert-primary d-none" role="alert">
+                 <i class="fas fa-spinner"></i>  Đang xử lý ảnh
+            </div>
+            <div id="alert-warning"class="alert alert-warning d-none" role="alert">
+                  <i class="fas fa-exclamation-triangle"></i>  Chưa chọn ảnh
+            </div>
+            <div id="alert-success" class="alert alert-success d-none" role="alert">
+                <i class="fas fa-check-circle"></i> Thành công
+            </div>
+            <div id="alert-error" class="alert alert-danger d-none" role="alert">
+                <i class="fas fa-bug"></i> Thất bại
+            </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container" style="margin-top:3%" >
+<div class="row">
+    <div class="col-5">
+
+    <form  id="upload-form" enctype="multipart/form-data">
+        <dl>
+            <img id="blah" style="width:100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6ca7l-ChcMxm72rOPEOCEbWWRdo9shoPfQ&usqp=CAU" alt="your image" />
+            <p>
+
+                <input type="file" name="file" id="image" onchange="readURL(this);" autocomplete="on" required>
+
+            </p>
+        </dl>
+        <p>
+
+<!--            <input type="submit" value="Submit" class="btn btn-info">-->
+        </p>
+    </form>
+         <button type="submit" id="btn-upload" class="btn btn-info">Submit</button>
+    </div>
+    <div class="col-7">
+        <div style="font-size: 30px;   text-align: center;   margin: 25px;">Thông tin cá nhân</div>
+        <form>
+            <div>Số CMT/CCCD</div>
+            <input type="text" name="id" id="id" class="form-control" value="" >
+
+            <div>Họ và tên</div>
+            <input type="text" name="Name" id="name" class="form-control" value="" >
+
+             <div>Ngày sinh</div>
+            <input type="text" name="birthday" id="birthday" class="form-control"value="" >
+            <div class="row">
+                <div class="col-6">
+                      <div>Giới tính</div>
+                      <input type="text" name="gender" id="gender" class="form-control" value="">
+                </div>
+                 <div class="col-6">
+                      <div>Quốc tịch</div>
+                      <input type="text" name="nationality" id="nationality" class="form-control" value="">
+                </div>
+            </div>
+
+             <div>Quê quán</div>
+            <input type="text" name="home" id="home" class="form-control" value="" >
+             <div>Địa chỉ thường trú</div>
+            <input type="text" name="address" id="address" class="form-control" value="" >
+
+
+
+        </form>
+    </div>
+
+</div>
+</div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.min.js"></script>
+<script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+<script>
+$(document).ready(function() {
+
+    $("#btn-upload").click(function() {
+
+        var fd = new FormData();
+        var files = $('#image')[0].files;
+        if(files.length<=0){
+            $("#alert-success").addClass("d-none");
+            $("#alert-info").addClass("d-none");
+            $("#alert-error").addClass("d-none");
+            $("#alert-warning").removeClass("d-none");
+            $("#alert-warning").fadeTo(2000, 500).slideUp(500, function(){
+            $("#alert-warning").slideUp(500);
+            });
+        }
+        else {
+            $("#alert-success").addClass("d-none");
+            $("#alert-error").addClass("d-none");
+            $("#alert-info").removeClass("d-none");
+            $("#alert-info").fadeTo(2000, 500).slideUp(500, function(){
+            $("#alert-info").slideUp(500);
+            });
+
+            fd.append('file', files[0]);
+
+            $.ajax({
+                url: 'http://127.0.0.1:5000/upload',
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    var data = JSON.parse(response);
+                    $("#alert-info").addClass("d-none");
+                    $("#alert-error").addClass("d-none");
+                    $("#alert-success").removeClass("d-none");
+                    $("#alert-success").fadeTo(2000, 500).slideUp(500, function(){
+                    $("#alert-success").slideUp(500);
+                        });
+                    $("#id").val(data['ID']);
+                    $("#name").val(data['Name']);
+
+                    $("#birthday").val(data['Birthday']);
+
+                    $("#gender").val(data['Gender']);
+
+                    $("#nationality").val(data['Nationality']);
+
+                    $("#home").val(data['Home']);
+
+                    $("#address").val(data['Address']);
+                },
+                 error: function (e) {
+                     $("#alert-info").addClass("d-none");
+                    $("#alert-success").addClass("d-none");
+                    $("#alert-error").removeClass("d-none");
+                    $("#alert-error").fadeTo(2000, 500).slideUp(500, function(){
+                    $("#alert-error").slideUp(500);
+                        });
+                }
+            });
+
+        };
+    });
+});
+  </script>
+</body>
+</html>
